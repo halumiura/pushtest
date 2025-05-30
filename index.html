@@ -8,7 +8,7 @@
   <h1>halu Push Test</h1>
   <h3>watakushi no web push kokoniari</h3>
   <h3>densetsu no hajimari</h3>
-  <h4>hmmmmmmmmmmmmmm...</h4>
+  <h4>hmmmm</h4>
   <button id="notifyButton">通知を表示</button>
  <script>
         // 通知の許可をリクエストする
@@ -21,7 +21,7 @@
       function showNotification() {
           // 通知の許可をリクエスト
           if (Notification.permission === 'granted') {
-              new Notification('ボタンが押されました！');
+              new Notification('ハルからのPush通知');
           } else if (Notification.permission !== 'denied') {
               Notification.requestPermission().then(permission => {
                   if (permission === 'granted') {
