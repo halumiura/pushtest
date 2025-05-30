@@ -25,7 +25,7 @@
           } else if (Notification.permission !== 'denied') {
               Notification.requestPermission().then(permission => {
                   if (permission === 'granted') {
-                      new Notification('ハルからのPush通知-let's go-');
+                      new Notification('ハルからのPush通知');
                   }
               });
           }
