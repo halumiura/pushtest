@@ -1,9 +1,9 @@
 body {
     font-family: 'Press Start 2P', cursive;
-    margin-top: 60px;
+    margin-top: 30px;
     background-color: #C5956B; /* ペールブラウン */
     color: #444;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 .card {
