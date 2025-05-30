@@ -25,7 +25,7 @@
           } else if (Notification.permission !== 'denied') {
               Notification.requestPermission().then(permission => {
                   if (permission === 'granted') {
-                      new Notification('ボタンが押されました！');
+                      new Notification('ハルからのPush通知だよ');
                   }
               });
           }
