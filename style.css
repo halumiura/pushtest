@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #f0f8ff; /* 薄い水色 */
+    color: #444;
+    line-height: 1.6;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #cceeff; /* 枠線 */
+}
+
+h1 {
+    color: #007bff; /* 青色 */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
