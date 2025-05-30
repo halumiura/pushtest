@@ -8,5 +8,33 @@
   <h1>halu Push Test</h1>
   <h3>ore no web push kokoniari</h3>
   <h3>densetsu no hajimari</h3>
+
+  <button id="notifyButton">通知を表示</button>button>
+  <script>
+    //通知の許可をリクエストする
+    document.addEventListener('DOMContentLoaded' , () => {
+      if (Notification.permission !== 'granted' ) {
+        Notification.requestPermission();
+      }
+    });
+    //通知を表示する関数
+    function showNotification() {
+      //通知の許可をリクエスト
+      if (Notification.permission ==='granted'){
+        new Notification('ボタンが押されました！');
+      }else if (Notification.permission !== 'denied'){
+        Notification.requestPermission().then(permission => {
+          if (permission === 'granted')
+            new Notification ('ボタンが押されました！');
+        }
+            });
+      }
+    }
+
+    //ボタンのクリックイベントに通知関数を設定
+    document.getElementById('notifyButton').addEventListener('click' ,
+                                                             showNotification); == $0
+  </script>
+  <div id"professor_prebid-root"></div>div>
 </body>
 </html>
