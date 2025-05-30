@@ -2,14 +2,37 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>web push test</title>
-      <link rel="stylesheet" href="style.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halu Push Test</title>
+
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
   <h1>halu Push Test</h1>
   <h3>watakushi no web push kokoniari</h3>
   <h3>densetsu no hajimari</h3>
   <h4>hmmmmmmmmm</h4>
+   <div class="container">
+        <div class="header-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="top-box">
+            halu Push test
+        </div>
+        <div class="content-area">
+            <div class="left-box">
+                通知を表示
+            </div>
+            <div class="right-lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
   <button id="notifyButton">通知を表示</button>
  <script>
         // 通知の許可をリクエストする
@@ -31,7 +54,6 @@
               });
           }
       }
-
       // ボタンのクリックイベントに通知関数を設定
       document.getElementById('notifyButton').addEventListener('click', showNotification);
   </script>
